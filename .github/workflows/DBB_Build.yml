@@ -36,7 +36,7 @@ jobs:
       MyWorkDir: tmp/ghActions/ghAction_poc-workspace_run_${{ github.run_number }} # Absolute path to directory for storing the clone and build outputs
       MyWorkSpace: /u/SACHIN/ghAction_poc-workspace # Absolute path to workspace (root) directory containing all required source directories
       MyApplication: ghAction-poc-app # Application directory name (relative to MyWorkSpace)
-      MyHlq: LAURENL.SSH # High level qualifier for partitioned data sets created during the build
+      MyHlq: SACHIN.SSH # High level qualifier for partitioned data sets created during the build
     steps:
       - name: Clone repository
         run: ${{ env.DBB_Host }} ${{ env.Clone }} ${{ env.MyRepo }} ${{ env.MyWorkDir }} ${{ env.MyWorkSpace }} ${{ env.MyBranch }}
